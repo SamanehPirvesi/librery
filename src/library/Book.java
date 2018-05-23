@@ -10,12 +10,14 @@ public class Book {
 		//this.autherName = autherName;
 	}
 
-	public String getTitleBook() {
-		return titleBook;
+	
+	public Book() {
+		super();
 	}
 
-	public void setTitleBook(String titleBook) {
-		this.titleBook = titleBook;
+
+	public void setTitleBook() {
+		
 	}
 
 	public String getAutherName() {
