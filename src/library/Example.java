@@ -19,18 +19,16 @@ public class Example {
 		// }
 
 		try {
-			FileReader fr = new FileReader("E:\\book.txt");
+			FileReader fr = new FileReader("./book.txt");
 			BufferedReader br = new BufferedReader(fr);
 			String bookDetail;
 			while ((bookDetail=br.readLine()) != null) {
 				Book b1 = new Book();
-				String[] bookVars = bookDetail.split(":"); 
-                b1.setAutherName(bookVars[0]);
-       
-
+				String[] bookVars = bookDetail.split(" "); 
+				b1.setTitleBook(bookVars[0]);
+				b1.setAutherName(bookVars[1]);
 				l.addBook(b1);
-				
-			}
+				}
 
 			br.close();
 			

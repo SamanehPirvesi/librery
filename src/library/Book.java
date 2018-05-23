@@ -4,21 +4,28 @@ public class Book {
 	private String titleBook;
 	private String autherName;
 
-	public Book(String titleBook) {
+	public Book(String titleBook , String autherName) {
 		super();
 		this.titleBook = titleBook;
-		//this.autherName = autherName;
-	}
-
+		this.autherName = autherName;
 	
+
+	}
 	public Book() {
 		super();
 	}
 
 
-	public void setTitleBook() {
-		
+	
+	public String getTitleBook() {
+		return titleBook;
 	}
+
+
+	public void setTitleBook(String titleBook) {
+		this.titleBook = titleBook;
+	}
+
 
 	public String getAutherName() {
 		return autherName;
