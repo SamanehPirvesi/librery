@@ -4,10 +4,10 @@ public class Book {
 	private String titleBook;
 	private String autherName;
 
-	public Book(String titleBook, String autherName) {
+	public Book(String titleBook) {
 		super();
 		this.titleBook = titleBook;
-		this.autherName = autherName;
+		//this.autherName = autherName;
 	}
 
 	public String getTitleBook() {
