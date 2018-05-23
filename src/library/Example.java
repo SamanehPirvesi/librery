@@ -1,5 +1,10 @@
 package library;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class Example {
 
 	public static void main(String[] args) {
@@ -14,9 +19,23 @@ public class Example {
 	l.addBook(b2);
 	 
 	for (Book b: l.getListOfBook()) {
-		System.out.println(b.getTitleBook());
+		//System.out.println(b.getTitleBook());
 	}
 
+	try {
+		FileReader fr=new FileReader("E:\\book.txt");
+		BufferedReader br = new BufferedReader(fr);
+		 int k;  
+            while ((k = br.read()) != -1) {  
+                System.out.print((char) k);  
+            }  
+            br.close(); 
+	}catch
+	(IOException ex)
+	{
+		System.out.println(ex.getMessage());
+	}
+	
 
 }
 }
